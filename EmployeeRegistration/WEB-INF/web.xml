@@ -1,0 +1,22 @@
+<web-app>
+    <servlet>
+        <servlet-name>EmployeeDB</servlet-name>
+        <jsp-file>/employeeRegistration.jsp</jsp-file>
+        <init-param>
+            <param-name>url</param-name>
+            <param-value>jdbc:mysql:///Learning</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>root</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>root</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeDB</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+</web-app>

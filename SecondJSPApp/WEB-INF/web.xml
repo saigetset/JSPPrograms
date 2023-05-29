@@ -1,0 +1,27 @@
+<web-app>
+    <display-name>This is JSP</display-name>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>sai</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>hello</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>DemoJsp</servlet-name>
+        <jsp-file>/hello.jsp</jsp-file>
+        <init-param>
+            <param-name>college</param-name>
+            <param-value>abc</param-value>
+        </init-param>
+        <init-param>
+            <param-name>school</param-name>
+            <param-value>def</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DemoJsp</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+</web-app>
